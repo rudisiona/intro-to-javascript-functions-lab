@@ -134,3 +134,47 @@ console.log('Exercise 9 Result:', basicCalculator(10, 5, "add"));
 
 
 
+// Exercise 10: calculateGrade()
+
+function calculateGrade(score){
+  if (90 <= score && score <= 100){
+   return 'A'
+  } else if (80 <= score && score < 90) {
+    return 'B'
+  } else if (70 <= score && score < 80) {
+    return 'C'
+  } else if (60 <= score && score < 70) {
+    return 'D'
+  } else {
+    return 'F'
+  }
+  
+}
+
+console.log('Exercise 10 Result:', calculateGrade(85));
+
+
+
+// Exercise 11: createUsername()
+
+function createUsername(firstName, lastName){
+  let firstThree = firstName.substring(0,3)
+  let secondThree = lastName.substring(0,3)
+  let charCount = firstName.length + lastName.length
+  return`${firstThree}${secondThree}${charCount}`
+}
+
+console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
+
+
+
+// Exercise 12: numArgs()
+
+function numArgs(...args){
+  return args.length
+}
+
+
+console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4));
+
+
